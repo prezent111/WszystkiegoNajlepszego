@@ -1,266 +1,219 @@
-html,
-body{
-    width:100%;
-    min-height:100%;
-    margin:0;
-    padding:0;
- background:linear-gradient(135deg,#ff9a9e,#fad0c4);
-}
-body{
-    margin:0;
-    min-height:100vh;
-    min-height:100dvh;
-    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-
+/* BODY – pełne pokrycie ekranu */
+body {
+    min-height: 100dvh;
+}
 
 /* NAPIS OD KOGO */
-
-#odkogo{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 20px;
-
-    background:#c97679;
-    color:white;
-
-    font-family:cursive;
-    font-size:1.2rem;
-
-    border-radius:12px;
-
-    box-shadow:0 4px 12px rgba(0,0,0,.15);
+#odkogo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #c97679;
+    color: white;
+    font-family: cursive;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
 }
 
 /* STRONA GŁÓWNA */
-
-.landing{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    min-height:100dvh;
-    padding:20px;
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 20px;
 }
 
-.container{
-    text-align:center;
-    max-width:600px;
+.container {
+    text-align: center;
+    max-width: 600px;
 }
 
-.container h1{
-    font-size:clamp(2rem,8vw,4rem);
-    margin-bottom:20px;
-    text-shadow:0 4px 10px rgba(0,0,0,.2);
+.container h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0,0,0,.2);
 }
 
-.container p{
-    font-size:clamp(1rem,4vw,1.3rem);
-    margin-bottom:25px;
+.container p {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    margin-bottom: 25px;
 }
 
-.btn{
-    display:inline-block;
-    padding:16px 30px;
-
-    background:white;
-    color:#ff4f81;
-
-    text-decoration:none;
-    font-size:1.1rem;
-    font-weight:bold;
-
-    border-radius:50px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
-
-    transition:.3s;
+.btn {
+    display: inline-block;
+    padding: 16px 30px;
+    background: white;
+    color: #ff4f81;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+    transition: .3s;
 }
 
-.btn:hover{
-    transform:scale(1.05);
+.btn:hover {
+    transform: scale(1.05);
 }
 
 /* STRONA Z ŻYCZENIAMI */
-
-.birthday-box{
-    text-align:center;
-    padding:40px 20px;
-    position:relative;
-    z-index:2;
+.birthday-box {
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
 }
 
-.birthday-box h1{
-    font-size:clamp(2rem,8vw,4rem);
-    margin-bottom:20px;
-    text-shadow:0 4px 10px rgba(0,0,0,.2);
+.birthday-box h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0,0,0,.2);
 }
 
-.birthday-box p{
-    max-width:800px;
-    margin:15px auto;
-
-    font-size:clamp(1rem,4vw,1.4rem);
-    line-height:1.7;
+.birthday-box p {
+    max-width: 800px;
+    margin: 15px auto;
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    line-height: 1.7;
 }
 
 /* GALERIA */
-
-.gallery{
-    display:flex;
-    align-items:center;
-
-    overflow-x:auto;
-    scroll-snap-type:x mandatory;
-
-    gap:15px;
-    padding:20px;
-
-    margin-bottom:90px;
-
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-
-    position:relative;
-    z-index:2;
+.gallery {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 90px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    position: relative;
+    z-index: 2;
 }
 
-.gallery::-webkit-scrollbar{
-    display:none;
+.gallery::-webkit-scrollbar {
+    display: none;
 }
 
-.gallery img{
-    flex:0 0 85%;
-    max-width:500px;
-    width:100%;
-    height:auto;
-
-    border-radius:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
-
-    scroll-snap-align:center;
-
-    transition:.3s;
+.gallery img {
+    flex: 0 0 85%;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    scroll-snap-align: center;
+    transition: .3s;
 }
 
-.gallery img:hover{
-    transform:scale(1.03);
+.gallery img:hover {
+    transform: scale(1.03);
 }
 
 /* PRZYCISK MUZYKI */
-
-#playMusic{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-
-    background:#1DB954;
-    color:white;
-
-    border:none;
-    border-radius:999px;
-
-    padding:15px 25px;
-
-    font-size:1rem;
-    font-weight:bold;
-
-    cursor:pointer;
-
-    box-shadow:0 5px 25px rgba(29,185,84,.4);
-
-    transition:.3s;
-
-    z-index:9999;
+#playMusic {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 25px rgba(29,185,84,.4);
+    transition: .3s;
+    z-index: 9999;
 }
 
-#playMusic:hover{
-    transform:scale(1.05);
-    box-shadow:0 8px 30px rgba(29,185,84,.6);
+#playMusic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(29,185,84,.6);
 }
 
-#playMusic:active{
-    transform:scale(.95);
+#playMusic:active {
+    transform: scale(.95);
 }
 
-#playMusic:disabled{
-    opacity:.95;
-    cursor:default;
+#playMusic:disabled {
+    opacity: .95;
+    cursor: default;
 }
 
 /* KONFETTI */
-
-#confetti{
-    position:fixed;
-    inset:0;
-
-    width:100%;
-    height:100%;
-
-    pointer-events:none;
-
-    z-index:1;
+#confetti {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* TABLETY */
-
-@media (max-width:768px){
-
-    .birthday-box{
-        padding:30px 15px;
+@media (max-width: 768px) {
+    .birthday-box {
+        padding: 30px 15px;
     }
 
-    .btn{
-        width:100%;
-        max-width:280px;
+    .btn {
+        width: 100%;
+        max-width: 280px;
     }
 
-    .gallery img{
-        flex:0 0 90%;
+    .gallery img {
+        flex: 0 0 90%;
     }
 
-    #playMusic{
-        left:50%;
-        right:auto;
-
-        width:90%;
-        max-width:320px;
-
-        transform:translateX(-50%);
+    #playMusic {
+        left: 50%;
+        right: auto;
+        width: 90%;
+        max-width: 320px;
+        transform: translateX(-50%);
     }
 
-    #playMusic:hover{
-        transform:translateX(-50%);
+    #playMusic:hover {
+        transform: translateX(-50%);
     }
 }
 
 /* MAŁE TELEFONY */
-
-@media (max-width:480px){
-
-    .birthday-box h1{
-        font-size:2rem;
+@media (max-width: 480px) {
+    .birthday-box h1 {
+        font-size: 2rem;
     }
 
-    .birthday-box p{
-        text-align:left;
+    .birthday-box p {
+        text-align: left;
     }
 
-    .gallery img{
-        flex:0 0 95%;
+    .gallery img {
+        flex: 0 0 95%;
     }
 
-    #odkogo{
-        width:100%;
-        text-align:center;
-        font-size:1rem;
+    #odkogo {
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
     }
 }
